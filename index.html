@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form Vaidation With Vanilla JavaScript</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    
+    <h2>Form Vaidation With Vanilla JavaScript</h2>
+    <div mainbar>
+
+        <form>
+            <span>
+                <input type="text" placeholder="Full Name" onkeyup="checkFullname()" />
+            </span>
+
+            <br/>
+            <br/>
+
+            <span>
+                <input type="text" placeholder="Email" onkeyup="checkEmail()" />
+            </span>
+
+            <br/>
+            <br/>
+
+            <span>
+                <input type="password" placeholder="Password" onkeyup="checkPassword()" />
+            </span>
+
+            <br/>
+            <br/>
+
+            <button id="submit_button" type="button" disabled>Submit</button>
+            
+            <p fullname id="fullname">
+                Fullname must contain at least 6 characters (before enabling submit button)
+            </p>
+            
+            <p email id="email">
+                Email must contain either @gmail.com or @hotmail.com or @yahoo.com (before enabling submit button)
+            </p>
+            
+            <p password id="password">
+                Password must contain at least 10 characters (before enabling submit button)
+            </p>
+
+        </form>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
