@@ -130,5 +130,5 @@ checkCorrections = () =>
 //when all requirements are met, the submit button should just reload the page and this helps it does that
 submit_button.onclick = () =>
 {
-    windows.location('/');
+    location.reload();
 }
